@@ -95,8 +95,168 @@
     // echo "Host: " .
     // echo "Path: " .
 
-    $url = 'https://www.w3resource.com/php-exercises/php-basic-exercises.php';
-    print_r('<pre>' . parse_url($url) . '');
+    // $url = 'https://www.w3resource.com/php-exercises/php-basic-exercises.php';
+    // print_r('<pre>' . parse_url($url) . '');
+
+
+
+
+    // 9. Write a PHP script, which changes the color of the first character of a word.
+
+    // $word = 'Salmon';
+    // $first_letter = substr($word, 0, 1);
+    // $rest_of_word = substr($word, 1);
+    // $html = "<p><span style='color: salmon;'>$first_letter</span>$rest_of_word</p>";
+    // echo $html
+
+
+
+    // 10. Write a PHP script, to check whether the page is called from 'https' or 'http'.
+
+    // echo '<pre>' . var_export($_SERVER, true) . '</pre>';
+    // $protocol = substr($_SERVER['SERVER_PROTOCOL'], 0, 4);
+
+    // if (substr($_SERVER['SERVER_PROTOCOL'], 0, 5) === 'HTTPS') {
+    //     echo 'The protocol is HTTPS!';
+    // } else if (substr($_SERVER['SERVER_PROTOCOL'], 0, 5) === 'HTTP/') {
+    //     echo 'The protocol is HTTP!';
+    // } else {
+    //     echo 'I got nothing :/';
+    // }
+
+
+
+
+    // 11. Write a PHP script to redirect a user to a different page.
+
+    // header("Location: http://mattfewer.com");
+    // exit(); // It is a good practice to call exit() right afterwords so that code below it does not get executed.
+
+
+
+
+
+    // 12. Write a simple PHP program to check that emails are valid.
+    // Hints : Use FILTER_VALIDATE_EMAIL filter that validates value as an e-mail address.
+    // Note : The PHP documentation does not say that FILTER_VALIDATE_EMAIL should pass the RFC5321.
+
+    // SEE check_valid_email.php for answer
+
+
+
+
+    // 13. Write a PHP script to display string values within a table
+    // Note: Use HTML table elements into echo.
+
+    // $data = array(
+    //     'Mr. A' => 1000,
+    //     'Mr. B' => 1250,
+    //     'Mrs. C' => 3000
+    // );
+    //
+    // $html = '<table>';
+    // $html .= '<tr>';
+    // $html .= '<th>Name</th>';
+    // $html .= '<th>Salary</th>';
+    // $html .= '</tr>';
+    //
+    // foreach($data as $key => $value){
+    //     $html .= "<tr>";
+    //     $html .= "<td>$key</td>";
+    //     $html .= "<td>$$value</td>";
+    //     $html .= "</tr>";
+    // }
+    //
+    // $html .= '</table>';
+    // echo $html;
+
+
+
+
+
+    // 14. Write a PHP script to display source code of a webpage (e.g. "http://www.example.com/").
+
+    // $code = file("http://www.example.com/");
+    //
+    // foreach($code as $line_num => $line)
+    // {
+    //     echo "Line #$line_num....$value: " . htmlspecialchars($line) . "<br />";
+    // }
+
+
+
+
+
+    // 15. Write a PHP script to get last modified information of a file.
+
+    // $file = basename(__FILE__);
+    // echo 'Last modified: ' . date("F d Y H:i:s.", filemtime($file));
+
+
+
+
+
+    // 16. Write a PHP script to count number of lines in a file.
+    // $file = file(__FILE__);
+    // $file = file('header.php');
+    // echo '# lines in file: ' . sizeof($file);
+
+
+
+
+
+    // 17. Write a PHP script to print current PHP version.
+    // echo 'PHP version I\'m workin with: ' . phpversion();
+
+
+
+
+
+    // 18. Write a PHP script to delay the program execution for the given number of seconds.
+    // echo date('h:i:s') . "\n";
+    //
+    // sleep(3);
+    //
+    // echo date('h:i:s');
+
+
+
+
+    // 19. Arithmetic operations on character variables: $d = 'A00'. Using this variable print the following numbers.
+    // Sample Output:
+        // A01
+        // A02
+        // A03
+        // A04
+        // A05
+
+    // $d = 'A00';
+    // $base = substr($d, 0, 2);
+    // $num = (int)substr($d, 2);
+    //
+    // function logStr($b, $n) {
+    //     echo $b . $n . "<br />";
+    // }
+    //
+    // logStr($base, $num++);
+    // logStr($base, $num++);
+    // logStr($base, $num++);
+    // logStr($base, $num++);
+    // logStr($base, $num++);
+    // logStr($base, $num++);
+
+
+
+
+
+
+    // 20. Write a PHP script to get the last occurred error.
+    echo $test;
+    print_r(error_get_last());
+
+
+
+
 
 ?>
 
