@@ -251,12 +251,117 @@
 
 
     // 20. Write a PHP script to get the last occurred error.
-    echo $test;
-    print_r(error_get_last());
+    // echo $test;
+    // print_r(error_get_last());
 
 
 
 
+
+    // 21. Write a PHP function to test whether a number is
+    // greater than 30, 20 or 10 using ternary operator.
+
+    // function checkNums($num) {
+    //     $str = $num > 30
+    //                 ? 'Num is greater than 30'
+    //                 : ($num > 20
+    //                     ? 'Num is greater than 20'
+    //                     : ($num > 10
+    //                         ? 'Num is greater than 10'
+    //                         : 'Num is less than 10'));
+    //     echo $str;
+    // }
+    // checkNums(30)
+
+
+
+
+
+    // 22. Write a PHP script to get the full URL.
+    // echo '<pre>' . var_export($_SERVER, true) . '</pre>';
+    // $url = (isset($_SERVER['HTTPS']) ? 'https' : 'http') . "://$_SERVER[HTTP_HOST]/$_SERVER[REQUEST_URI]";
+    // NOTE that you don't use the quotes for a string while inside of double quotes
+    // echo $url;
+
+
+
+
+
+    // 23. Write a PHP script to compare the PHP version.
+    // Note : Use version_compare() function and PHP_VERSION constant.
+
+    // function x_compare_versions($v) {
+    //     $result = version_compare(PHP_VERSION, $v);
+    //     if (version_compare(PHP_VERSION, $v) == 0) {
+    //         echo 'Up to date with version ' . PHP_VERSION;
+    //     } elseif (version_compare(PHP_VERSION, $v) == -1) {
+    //         echo $v . ' is higher than the current version ' . PHP_VERSION;
+    //     } elseif (version_compare(PHP_VERSION, $v) == 1) {
+    //         echo $v . ' is lower than the current version ' . PHP_VERSION;
+    //     }
+    // }
+    // x_compare_versions('6.0.0');
+
+
+
+
+    // 24. Write a PHP script to get the name of the owner of the current PHP script.
+
+    // echo get_current_user();
+
+
+
+
+    // 25. Write a PHP script to get the document root directory under which the
+    // current script is executing, as defined in the server's configuration file.
+
+    // echo $_SERVER['DOCUMENT_ROOT'];
+
+
+
+
+    // 26. Write a PHP script to get the information about the operating system PHP is running on.
+    // echo $_SERVER['HTTP_USER_AGENT'];
+
+
+
+
+    // 27. Write a PHP script to print out all the credits for PHP.
+    // phpcredits(CREDITS_ALL);
+
+
+
+
+    // 28. Write a PHP script to get the directory path used for temporary files.
+    // echo sys_get_temp_dir();
+
+
+
+
+
+    // 29. Write a PHP script to get the names of the functions of a module.
+    // Note : Find XML, JSON functions etc.
+    // print_r(get_extension_funcs("xml"));
+    // print_r(get_extension_funcs("json"));
+
+
+
+
+
+
+
+    // 30. Write a PHP script to get the time of the last modification of the current page
+    // echo "Last modified: " . date ("F d Y H:i:s.", getlastmod())."\n";
+
+
+
+
+
+
+
+    function log_server_var() {
+        echo "<pre>" . var_export($_SERVER, true) ."</pre>";
+    }
 
 ?>
 
