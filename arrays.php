@@ -126,7 +126,102 @@
 
 
 
-// 8. 
+// 8. Write a PHP script to sort the following associative array :
+// array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40") in
+// $arr = array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
+
+// a) ascending order sort by value
+// asort($arr);
+
+// b) ascending order sort by Key
+// ksort($arr);
+
+// c) descending order sorting by Value
+// arsort($arr);
+
+// d) descending order sorting by Key
+// krsort($arr);
+
+// logg($arr);
+
+
+
+
+
+
+
+// 9. Write a PHP script to calculate and display average temperature, five lowest and highest temperatures.
+// Recorded temperatures : 78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73
+// Expected Output :
+// Average Temperature is : 70.6
+// List of seven lowest temperatures : 60, 62, 63, 63, 64,
+// List of seven highest temperatures : 76, 78, 79, 81, 85,
+
+// $temps = array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
+// $average = array_sum($temps)/count($temps);
+// echo "Average Temperature is $average";
+
+// sort($temps);
+// logg($temps);
+
+// function get_five_min($original_array) {
+//     // array_slice takes a 4th param (boolean) which will preserve the keys of the array
+//     // when set to true, default is false.
+//     return array_slice($original_array, 0, 5);
+// }
+
+// function get_five_max($original_array) {
+//     return array_slice($original_array, count($original_array) - 5, count($original_array));
+// }
+
+// echo print_r(get_five_min($temps));
+// echo print_r(get_five_max($temps));
+
+
+
+
+
+
+// 10. Write a PHP program to sort an array of positive integers using the Bead-Sort Algorithm.
+// According to Wikipedia "Bead-sort is a natural sorting algorithm, developed by Joshua J. Arulanandham,
+// Cristian S. Calude and Michael J. Dinneen in 2002. Both digital and analog hardware implementations of
+// bead sort can achieve a sorting time of O(n); however, the implementation of this algorithm tends
+// to be significantly slower in software and can only be used to sort lists of positive integers".
+
+// Nahhhhhhhhhhh
+
+
+
+
+
+// 11. Write a PHP program to merge (by index) the following two arrays.
+// Sample arrays :
+// $array1 = array(array(77, 87), array(23, 45));
+// $array2 = array("w3resource", "com");
+// Expected Output :
+//
+// Array  (
+//     [0] => Array(
+//         [0] => w3resource
+//         [1] => 77
+//         [2] => 87
+//     )
+//     [1] => Array(
+//         [0] => com
+//         [1] => 23
+//         [2] => 45
+//     )
+// )
+
+$array1 = array(array(77, 87), array(23, 45));
+$array2 = array("w3resource", "com");
+
+foreach ($array1 as $i => $nested_arr) {
+    array_unshift($nested_arr, $array2[$i]);
+    $array1[$i] = $nested_arr;
+}
+
+logg($array1);
 
 
 
