@@ -213,15 +213,27 @@
 //     )
 // )
 
-$array1 = array(array(77, 87), array(23, 45));
-$array2 = array("w3resource", "com");
+// $array1 = array(array(77, 87), array(23, 45));
+// $array2 = array("w3resource", "com");
 
-foreach ($array1 as $i => $nested_arr) {
-    array_unshift($nested_arr, $array2[$i]);
-    $array1[$i] = $nested_arr;
-}
 
-logg($array1);
+// Ricky: I think because your getting a copy of the value and not a reference.
+// I think you can add an ampersand to make it a reference.
+// $i => &$nested_array
+// foreach ($array1 as $i => &$nested_arr) {
+//     array_unshift($nested_arr, $array2[$i]);
+//     // $array1[$i] = $nested_arr;
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
