@@ -232,8 +232,95 @@
 
 
 
+// 12. Write a PHP function to change the following array's all values to upper or lower case.
+
+// Sample arrays :
+// $Color = array('A' => 'Blue', 'B' => 'Green', 'c' => 'Red');
+// Expected Output :
+// Values are in lower case.
+// Array ( [A] => blue [B] => green [c] => red )
+// Values are in upper case.
+// Array ( [A] => BLUE [B] => GREEN [c] => RED )
+
+// $color = array('A' => 'Blue', 'B' => 'Green', 'c' => 'Red');
+//
+// function change_case(&$arr, $case) {
+//     foreach($arr as $key => $value) {
+//         if ($case === 'upper') {
+//             $arr[$key] = strtoupper($value);
+//         } else if ($case === 'lower') {
+//             $arr[$key] = strtolower($value);
+//         }
+//     }
+//
+//     return $arr;
+// }
+// change_case($color, 'upper');
+// logg($color);
 
 
+
+
+
+
+// 13. Write a PHP script which displays all the numbers between 200 and 250 that are divisible by 4.
+// Note : Do not use any PHP control statement.
+// Expected Output : 200,204,208,212,216,220,224,228,232,236,240,244,248
+
+// function log_num($num) {
+//     $html = array();
+//
+//     while ($num < 250) {
+//         if ($num % 4 === 0) {
+//             array_push($html, $num);
+//         }
+//         $num++;
+//     }
+//
+//     return join(', ', $html);
+// }
+// echo log_num(200);
+
+
+
+
+
+// 14. Write a PHP script to get the shortest/longest string length from an array.
+
+// Sample arrays : ("abcd","abc","de","hjjj","g","wer")
+// Expected Output : The shortest array length is 1. The longest array length is 4.
+
+// function find_lengths($arr) {
+//     $map = array_map('strlen', $arr); // returns an array with of the string lenghts
+//
+//     $low = min($map);
+//     $high = max($map);
+//
+//     return "The shortest array lenght is $low. The longest array lenght is $high";
+// }
+//
+// $my_arr = array("abcd","abc","de","hjjj","g","wer");
+// echo find_lengths($my_arr);
+
+
+
+
+
+
+
+// 15. Write a PHP script to generate unique random numbers within a range.
+// Sample Range : (11, 20)
+// Sample Output : 17 16 13 20 14 19 18 15 11 12
+
+// function make_random($low, $high) {
+//     $x = range($low, $high);
+//     shuffle($x);
+//
+//     for ($i = 0; $i < count($x); $i++) {
+//         echo $x[$i] . ' ';
+//     }
+// }
+// make_random(11, 20);
 
 
 
